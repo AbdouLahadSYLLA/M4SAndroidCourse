@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.lahad.conversion.MainActivityFragment"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:text="Bienvenue! \n Veuillez saisir la valeur"
+        android:padding="8dp"
+        android:layout_margin="15dp"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/dollar"
+        android:layout_gravity="top" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton1"
+        android:src="@drawable/fcomore"
+        />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/col2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="valeur en Dollar"
+        android:textSize="20dp"
+        android:inputType = "numberDecimal"
+        android:textColor="@color/abc_input_method_navigation_guard">
+
+        <requestFocus />
+    </EditText>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/resultat"
+        android:textSize="20dp"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:hint="valeur en Comorian francs"
+        android:layout_weight="0.50" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_gravity="top|center_horizontal">
+
+        <Button
+            android:id="@+id/effacer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EFFACER"
+            android:drawableLeft="@drawable/cancel"
+            android:layout_gravity="top" />
+
+        <Button
+            android:id="@+id/convert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Convertir"
+            android:drawableLeft="@drawable/add"
+            android:layout_gravity="top|bottom" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
